@@ -1,0 +1,19 @@
+<!-- blog.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Blog Posts</h1>
+    <ul>
+        {% for post in blog_posts %}
+            <li>
+                <h2>{{ post.title }}</h2>
+                <p>{{ post.content }}</p>
+                <p>Posted on: {{ post.published_date }}</p>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
